@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hud" class="glass hud hidden">
+        <div class="hud-top">
+            <div id="hudRod" class="rod-chip"></div>
+            <div id="hudStatus" class="status-pill"></div>
+        </div>
+        <div class="hud-row">
+            <div class="arrow">&#8249;</div>
+            <div class="bait-card">
+                <div id="baitIcon" class="icon-box"></div>
+                <div class="bait-meta">
+                    <div id="baitLabel" class="kicker"></div>
+                    <div id="baitName" class="bait-name"></div>
+                    <div id="baitCount" class="bait-count"></div>
+                </div>
+            </div>
+            <div class="arrow">&#8250;</div>
+        </div>
+        <div class="dur">
+            <div class="dur-head"><span id="durLabel"></span><span id="durValue"></span></div>
+            <div class="track"><div id="durFill" class="fill"></div></div>
+        </div>
+        <div class="keys">
+            <div class="key-row"><span class="kbd">&#8593;</span><span id="keyCast"></span></div>
+            <div class="key-row"><span class="kbd">&#8595;</span><span id="keyReel"></span></div>
+            <div class="key-row"><span class="kbd">&#8592; &#8594;</span><span id="keyBait"></span></div>
+        </div>
+    </div>
+
+    <div id="bite" class="glass bite hidden">
+        <div id="biteTitle" class="bite-title"></div>
+        <div id="biteHint" class="bite-hint"></div>
+        <div class="track"><div id="biteFill" class="fill time"></div></div>
+    </div>
+
+    <div id="mini" class="glass mini hidden">
+        <div class="mini-head">
+            <div id="miniTitle" class="mini-title"></div>
+            <div id="miniGroup" class="chip"></div>
+        </div>
+        <div class="mini-body">
+            <div class="bar">
+                <div id="zone" class="zone"></div>
+                <div id="fish" class="fish"><div class="fish-body"></div></div>
+            </div>
+            <div class="mini-info">
+                <div class="fish-card">
+                    <div id="fishIcon" class="icon-box big"></div>
+                    <div>
+                        <div id="fishName" class="fish-name"></div>
+                        <div id="miniHint" class="hint"></div>
+                    </div>
+                </div>
+                <div class="meter-block">
+                    <div class="meter-head"><span id="lblProgress"></span><span id="progressValue"></span></div>
+                    <div class="track tall"><div id="progressFill" class="fill"></div></div>
+                </div>
+                <div class="meter-block">
+                    <div class="meter-head"><span id="lblTime"></span><span id="timer"></span></div>
+                    <div class="track"><div id="timeFill" class="fill time"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="glass toast hidden">
+        <div id="toastIcon" class="icon-box"></div>
+        <div>
+            <div id="toastKind" class="kicker"></div>
+            <div id="toastText" class="toast-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
